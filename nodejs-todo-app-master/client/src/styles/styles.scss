@@ -1,0 +1,102 @@
+@import "base";
+
+.app {
+  min-height: 100vh;
+  background: url("/img/bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+
+  .main-content {
+    flex-grow: 1;
+  }
+}
+
+.login-form {
+  padding: 3rem;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.register-form {
+  padding: 3rem 3rem 1.5rem 3rem;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.nav-item {
+  font-size: 2rem;
+
+  .nav-link:focus {
+    outline: none;
+  }
+}
+
+.navbar-brand {
+  font-size: 2.5rem;
+}
+
+input[type="checkbox"] {
+  transform: scale(2);
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.register,
+.login,
+.todo-edit,
+.todo-create,
+.filters,
+td {
+  input,
+  button {
+    font-size: 1.8rem;
+  }
+
+  input {
+    // border-radius: 100px;
+  }
+
+  input[type="submit"],
+  button {
+    border-radius: 2px;
+  }
+
+  select,
+  label {
+    font-size: 1.6rem;
+  }
+
+  select {
+    height: 2.5rem;
+    border-radius: 100px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.task-btn {
+  background: transparent;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.todo-create,
+.todo-edit {
+  background: $dark-overlay;
+}
+
+.todo-table {
+  background: $dark-overlay;
+}
